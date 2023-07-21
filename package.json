@@ -9,11 +9,13 @@
     "dev": "ts-node ./src/index.ts",
     "dev:nodemon": "nodemon dev",
     "build": "rimraf dist && tsc",
-    "prod": "node --experimental-specifier-resolution=node --no-warnings dist/index.js"
+    "prod": "node --experimental-specifier-resolution=node --no-warnings dist/index.js",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@types/node": "^20.4.2",
     "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.6"
   },

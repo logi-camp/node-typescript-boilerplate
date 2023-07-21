@@ -1,3 +1,3 @@
-export default function(){
-    console.log("import is working")
+export default function () {
+  console.log('import is working');
 }
