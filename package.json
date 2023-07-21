@@ -1,0 +1,24 @@
+{
+  "name": "typescript-node-boilerplate",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "Seraj Haqiqi <haqiqi.seraj@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "dev:nodemon": "nodemon dev",
+    "build": "rimraf dist && tsc",
+    "prod": "node --experimental-specifier-resolution=node --no-warnings dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "nanoid": "^4.0.2",
+    "ts-node": "^10.9.1"
+  }
+}
